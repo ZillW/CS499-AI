@@ -5,3 +5,5 @@ langchain-openai
 gunicorn
 streamlit
 langchain-ollama
+tiktoken
+python-dotenv
