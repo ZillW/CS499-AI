@@ -274,7 +274,7 @@ if __name__ == "__main__":
 # ========== Flask ==========
 from flask import Flask, request, jsonify
 
-flask_app = Flask(__name__)
+app = Flask(__name__)
 
 @flask_app.route('/api/generate_ad', methods=['POST'])
 def generate_ad():
@@ -308,4 +308,3 @@ if __name__ == '__main__':
         flask_app.run(host="0.0.0.0", port=5000)
     else:
         import streamlit as st
-        # 这里默认 Streamlit 界面逻辑已存在于原代码中
