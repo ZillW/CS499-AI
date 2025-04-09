@@ -4,3 +4,4 @@ langchain
 langchain-openai
 gunicorn
 streamlit
+langchain-ollama
