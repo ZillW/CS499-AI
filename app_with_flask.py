@@ -276,7 +276,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@flask_app.route('/api/generate_ad', methods=['POST'])
+@app.route('/api/generate_ad', methods=['POST'])
 def generate_ad():
     data = request.get_json()
     answers = data.get("answers", [])
@@ -305,6 +305,6 @@ def generate_ad():
 if __name__ == '__main__':
     import sys
     if "runserver" in sys.argv:
-        flask_app.run(host="0.0.0.0", port=5000)
+        app.run(host="0.0.0.0", port=5000)
     else:
         import streamlit as st
